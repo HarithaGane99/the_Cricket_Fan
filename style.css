@@ -1,0 +1,123 @@
+
+
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    color: white
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #fff;
+
+}
+
+#editbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#sendbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+#cview{
+    padding: 10px;
+    font-size: 24px;
+    background:none;
+    border: 5px double rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    font-size: 20px;
+    text-align:center;
+    width: 200px;
+    color: white;
+    margin-bottom: 100px;
+}
+#cview:hover{
+   
+        background-color: rgb(52, 61, 235);
+        border: black;
+        color: white;
+    
+}
+
+
+#to-PageEditor {
+    border: 1px solid blue;
+    background: white;
+    transition: 1s;
+}
+
+#background{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 0, 0.7), rgba(4, 9, 0, 0.7)), url(cricket.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#querytopic {
+    
+    font-size: 17px;
+    color: white;
+   
+    
+}
+#part1{
+    padding: 15px ;
+    padding-top: 20px;
+    border:  5px outset white;
+    width:500px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+h1  {
+    margin-left: 15%;
+}
+h6 {
+    margin-left: 15%;
+}
+
+.margin {
+    margin-left: 15%;
+}
+
+textarea{
+    margin-left: 15%;
+}
+#part2{
+        visibility:hidden;
+	    margin-left:15%;
+}
+
+

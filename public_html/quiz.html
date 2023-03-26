@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="quiz.css">
+		<title>Cricket Quiz</title>
+		<script>
+		
+		let score=0;
+		let totalscore=0;
+		const correct_Answers=[];
+		const incorrect_Answers=[];
+			//function myFunction(){
+			//let myVar=setTimeout(function(){
+			//},5000);
+			//}/
+			//function startTimer(){
+			//let time=setTimeout(function(){
+			
+			//function startQuiz(){
+			//let myTimeout1 = setTimeout(function(){
+			function submitQuiz(myFormRef){
+			let myVar = setTimeout(function(){
+			//let myVar=setTimeout(function(){
+			//clearTimeout(myVar);
+			let score=0;
+			let selectedradiooption=getRadioValue(myFormRef.q1);
+			if(selectedradiooption=="Muttiah Muralitharan"){
+			correct_Answers.push(selectedradiooption);
+			score=score+2;
+			}
+			else if (selectedradiooption=="Glenn McGrath"||selectedradiooption=="Shane Warne"||selectedradiooption=="Wasim Akram"){
+			incorrect_Answers.push(selectedradiooption);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption2=getRadioValue(myFormRef.q2);
+			if(selectedradiooption2=="India"){
+			correct_Answers.push(selectedradiooption2);
+			score=score+2;
+			}
+			else if (selectedradiooption2=="Sri Lanka"||selectedradiooption2=="Australia"||selectedradiooption2=="Pakistan"){
+			incorrect_Answers.push(selectedradiooption2);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption3=getRadioValue(myFormRef.q3);
+			if(selectedradiooption3=="Ireland"){
+			correct_Answers.push(selectedradiooption3);
+			score=score+2;
+			}
+			else if(selectedradiooption3=="Nederland"|| selectedradiooption3=="South Africa"|| selectedradiooption3=="New Zealand"){
+			incorrect_Answers.push(selectedradiooption3);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption4=getRadioValue(myFormRef.q4);
+			if(selectedradiooption4=="Bandula Warnapura"){
+			correct_Answers.push(selectedradiooption4);
+			score=score+2;
+			}
+			else if(selectedradiooption4=="Arjuna Ranatunga"|| selectedradiooption4=="Sidath Wettimiuny"|| selectedradiooption4=="Dulip Mendis"){
+			incorrect_Answers.push(selectedradiooption4);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption5=getRadioValue(myFormRef.q5);
+			if(selectedradiooption5=="Adelaide"){
+			correct_Answers.push(selectedradiooption5);
+			score=score+2;
+			}
+			else if(selectedradiooption5=="Lords"|| selectedradiooption5=="New Wanderers"|| selectedradiooption5=="MCG"){
+			incorrect_Answers.push(selectedradiooption5);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption6=getRadioValue(myFormRef.q6);
+			if(selectedradiooption6=="Chris Gayle"){
+			score=score+2;
+			correct_Answers.push(selectedradiooption6);
+			}
+			else if(selectedradiooption6=="Shoaib Malik"|| selectedradiooption6=="K Pollard"|| selectedradiooption6=="David Warner"){
+			score=score-1;
+			incorrect_Answers.push(selectedradiooption6);
+			}
+			else{
+			score=score-1;
+			}
+			
+
+		
+			let selectedradiooption7=getRadioValue(myFormRef.q7);
+			if(selectedradiooption7=="10"){
+			score=score+2;
+			correct_Answers.push(selectedradiooption7);
+			}
+			else if(selectedradiooption7=="4"|| selectedradiooption7=="8"|| selectedradiooption7=="6"){
+			incorrect_Answers.push(selectedradiooption7);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption8=getRadioValue(myFormRef.q8);
+			if(selectedradiooption8=="SSC"){
+			score=score+2;
+			correct_Answers.push(selectedradiooption8);
+			}
+			else if(selectedradiooption8=="Galle"|| selectedradiooption8=="Pallekale"|| selectedradiooption8=="RPS"){
+			incorrect_Answers.push(selectedradiooption8);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			let selectedradiooption9=getRadioValue(myFormRef.q9);
+			if(selectedradiooption9=="James Anderson"){
+			score=score+2;
+			correct_Answers.push(selectedradiooption9);
+			}
+			else if(selectedradiooption9=="Stuart Broad"|| selectedradiooption9=="Mark Wood"|| selectedradiooption9=="Liam Plunkett"){
+			incorrect_Answers.push(selectedradiooption9);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+			
+			
+			let selectedradiooption10=getRadioValue(myFormRef.q10);
+			if(selectedradiooption10=="Sanath Jayasuriya"){
+			score=score+2;
+			correct_Answers.push(selectedradiooption10);
+			}
+			else if(selectedradiooption10=="Arjuna Ranatunga"|| selectedradiooption10=="Aravinda de Silva"|| selectedradiooption10=="Roshan Mahanama"){
+			incorrect_Answers.push(selectedradiooption10);
+			score=score-1;
+			}
+			else{
+			score=score-1;
+			}
+
+
+			
+			//const myTimeout = setTimeout("submitQuiz(this.form);", 5000);
+			function getRadioValue(radioArray){
+				for(let i=0;i<radioArray.length;i++){
+				if (radioArray[i].checked){
+				return radioArray[i].value;
+				}
+				}
+				return "";
+				}
+				
+				totalscore=score;
+				document.getElementById("score").innerHTML=totalscore;
+				document.getElementById("canswers").innerHTML=correct_Answers;
+				document.getElementById("ianswers").innerHTML=incorrect_Answers;
+				
+				if (totalscore<5){
+				document.body.style.backgroundColor = "red";
+				}
+				else if(totalscore<10){
+				document.body.style.backgroundColor = "pink";
+				}
+				else if(totalscore<15){
+				document.body.style.backgroundColor = "yellow";
+				}
+				else{
+				document.body.style.backgroundColor = "green";
+				}
+				
+			
+			
+			},5000);
+			}
+			//function submitQuiz(myFormRef){
+				//clearTimeout(myVar);
+			//}/
+			//window.setTimeout("submitQuiz",2000);
+			////const myTimeout = setTimeout("submitQuiz(this.form);", 5000);
+		</script>
+	</head>
+	<body>
+		
+		<h3><i>Time to showcase your expertise in the quest for knowledge.</i></h3>
+		<form name="quiz" id="quiz">
+		<img src="logo.jpeg" alt="logo" class="logo" height="200" width="220">
+			<img src="q.png" class="qt" alt="Quiz Time" width="400" height="300" ></span>
+			
+			<input type="button" class="btn" value="Start Timer" onclick="submitQuiz(this.form);">
+			<div class="color1">
+				<p class="question">1.Who is the highest wicket taker in test cricket?</p>
+					<p><input type="radio" name="q1" value="Glenn McGrath">Glenn McGrath</p>
+					<p><input type="radio" name="q1" value="Shane Warne">Shane Warne</p>
+					<p><input type="radio" name="q1" value="Muttiah Muralitharan">Muttiah Muralitharan</p>
+					<p><input type="radio" name="q1" value="Wasim Akram">Wasim Akram</p>
+			</div>
+			<div class="color2">
+				<p class="question">2.Who won the first ever T20 world cup in 2007?</p>
+					<p><input type="radio" name="q2" value="Sri Lanka">Sri Lanka</p>
+					<p><input type="radio" name="q2" value="India">India</p>
+					<p><input type="radio" name="q2" value="Australia">Australia</p>
+					<p><input type="radio" name="q2" value="Pakistan">Pakistan</p>
+			</div>
+			
+			<div class="color1">
+				<p class="question">3.For what team did Eoin Morgan played international cricket before England?</p>
+					<p><input type="radio" name="q3" value="Nederland">Nederland</p>
+					<p><input type="radio" name="q3" value="South Africa">South Africa</p>
+					<p><input type="radio" name="q3" value="New Zealand">New Zealand</p>
+					<p><input type="radio" name="q3" value="Ireland">Ireland</p>
+			</div>
+			<div class="color2">
+				<p class="question">4. Who captained the Sri Lanka’s first ever test match?</p>
+					<p><input type="radio" name="q4" value="Arjuna Ranatunga">Arjuna Ranatunga</p>
+					<p><input type="radio" name="q4" value="Sidath Wettimiuny">Sidath Wettimiuny</p>
+					<p><input type="radio" name="q4" value="Dulip Mendis">Dulip Mendis</p>
+					<p><input type="radio" name="q4" value="Bandula Warnapura">Bandula Warnapura</p>
+			</div>
+			<div class="color1">
+				<p class="question">5.Which stadium hosted the first ever day-night test match?</p>
+					<p><input type="radio" name="q5" value="Lords">Lords</p>
+					<p><input type="radio" name="q5" value="Adelaide">Adelaide</p>
+					<p><input type="radio" name="q5" value="MCG">MCG</p>
+					<p><input type="radio" name="q5" value="New Wanderers">New Wanderers</p>
+				
+			</div>
+			<div class="color2">
+				<p class="question">6.Who has scored the most runs in t20 cricket?</p>
+					<p><input type="radio" name="q6" value="Shoaib Malik">Shoaib Malik</p>
+					<p><input type="radio" name="q6" value="K Pollard">K Pollard</p>
+					<p><input type="radio" name="q6" value="Chris Gayle">Chris Gayle</p>
+					<p><input type="radio" name="q6" value="David Warner">David Warner</p>
+			</div>
+			<div class="color1">
+				<p class="question">7.How many ways are there to be dismissed in Cricket?</p>
+					<p><input type="radio" name="q7" value="4">4</p>
+					<p><input type="radio" name="q7" value="6">6</p>
+					<p><input type="radio" name="q7" value="8">8</p>
+					<p><input type="radio" name="q7" value="10">10</p>
+			</div>
+			<div class="color2">
+				<p class="question">8.Mahela Jayawardene holds the record for the most number of runs on a single ground. Identify this ground.</p>
+					<p><input type="radio" name="q8" value="SSC">SSC</p>
+					<p><input type="radio" name="q8" value="Galle">Galle</p>
+					<p><input type="radio" name="q8" value="RPS">RPS</p>
+					<p><input type="radio" name="q8" value="Pallekale">Pallekale</p>
+			</div>
+			<div class="color1">
+				<p class="question">9.Which English pacer is known as the “Burnley Express”?</p>
+					<p><input type="radio" name="q9" value="James Anderson">James Anderson</p>
+					<p><input type="radio" name="q9" value="Stuart Broad">Stuart Broad</p>
+					<p><input type="radio" name="q9" value="Mark Wood">Mark Wood</p>
+					<p><input type="radio" name="q9" value="Liam Plunkett">Liam Plunkett</p>
+			</div>
+			<div class="color2">
+				<p class="question">10.Who was the player of the series in 1996 world cup?</p>
+					<p><input type="radio" name="q10" value="Sanath Jayasuriya">Sanath Jayasuriya</p>
+					<p><input type="radio" name="q10" value="Arjuna Ranatunga">Arjuna Ranatunga</p>
+					<p><input type="radio" name="q10" value="Aravinda de Silva">Aravinda de Silva</p>
+					<p><input type="radio" name="q10" value="Roshan Mahanama">Roshan Mahanama</p>
+			</div>
+			
+			
+			<input type="button" class="btn" value="Submit Quiz" onclick="submitQuiz(this.form);">
+			
+			
+			<div id="box">
+			<h1>Result Summary</h1>
+			<p>
+			<strong>Your Score</strong>:
+			<span id="score"></span>
+			</p>
+			
+			<p>
+			<strong>Correct Answers</strong>:
+			<span id="canswers"></span>
+			</p>
+			<p>
+			<strong>Inorrect Answers</strong>:
+			<span id="ianswers"></span>
+			</p>
+			
+			</div>
+			
+		</form>
+		<a href="aboutharitha.html">Page Editor</a>
+	</body>
+	
+	
+		
+		
+		
+	
+</html>

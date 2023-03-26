@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <meta name="viewpoint" content="width-device-width, initial-scale-1.0">
+    <title>Ricky Ponting</title>
+    <link rel="stylesheet" type="text/css" href="ricky.css">
+</head>
+<body>
+<header>
+        <div class="container">
+          <img src="logo.jpeg" alt="logo" class="logo">
+
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="studentdetailspage.html">About Us</a></li>
+              <li><a href="store-page.html.html">Store</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+			  <li><a href="Gallery.html">Gallery</a></li>
+			  <li><a href="g.html">Query Form</a></li>
+			  <li><a href="sitemap2.html">Site Map</a></li>
+              <li><a href="ricky.html">Others</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+	  <ul>
+		<li><a href="#intro">Introduction</a></li><br>
+		<li><a href="#persI">Personal Information</a></li><br>
+		<li><a href="#1999">1999 World Cup</a></li><br>
+		</ul>
+    <section>
+		
+        <div class="content">
+            <div>
+                <h2>Ricky Ponting</h2>
+				<br>
+				<br>
+                <p id="intro">
+                   Ricky Thomas Ponting AO (born 19 December 1974) is an Australian cricket coach, commentator, and former cricketer. Ponting was captain of the Australian national team during its "golden era", between 2004 and 2011 in Test cricket and 2002 and 2011 in One Day Internationals (ODIs) and is the most successful captain in international cricket history, with 220 victories in 324 matches with a winning rate of 67.91%. He is widely considered to be one of the best batsmen of the modern era and in December 2006 reached the highest rating achieved by a Test batsman for 50 years, although this was surpassed by Steve Smith in December 2017.[2] He stands second in the list of cricketers by number of international centuries scored behind Sachin Tendulkar.</p></br></br>
+                    <p id="persI">Born: 19 December 1974<br>
+                    Nickname:Punter<br>
+					Role:Batsman</br>
+                    Batting: Right-handed </br>
+                    Bowling: Right-arm medium <br>
+                    Teams: Austrlia,Tasmania,Surrey,Kolkata Knight Riders,Hobart Hurricanes,Mumbai Indians</p><br>
+<br>
+				<h3 id="1999">First World Cup success (1999)</h3><br>
+				<p>Australia started their 1999 World Cup campaign in England with success against minnows Scotland, before defeats by Pakistan and New Zealand.[100] Ponting scored, 33, 47 and 49 respectively.[69] After the twin defeats, pundits doubted whether Australia could make the semi-finals let alone win the tournament.[100] Australia then defeated Bangladesh with 30 overs to spare, as Ponting batted out of his usual number three spot for the only time in the tournament. In an attempt to increase the run-rate with pinch hitter Brendon Julian, Ponting scored an unbeaten 18 from 10 balls at number four.[101] Ponting scored 20, 23 and 36 in the following matches against the West Indies, India and Zimbabwe. In the last match of the Super Six stage of the tournament, Australia were to play South Africa in a match they needed to win to make the semi-finals. South Africa batted first and scored 271, before Australia slumped to 3/48. Steve Waugh joined Ponting in the middle and scored 22 runs in ten overs. Both then agreed increase the scoring in a mid-pitch conversation. South African all-rounder Jacques Kallis could not bowl because of strained abdominal muscles and the batting pair attacked the replacement bowlers, scoring 82 from 10 overs. They were involved in a 126-run stand until Ponting fell for 69 scored in 110 balls, including five fours and two sixes. Waugh went on to make 120 off 110 deliveries helping Australia win with two balls to spare. The sides met again in their next match, this time in the semi-final at Edgbaston on 17 June 1999. Australia only managed 213, with Ponting contributing a solid 37 from 48 balls. In reply, South Africa started strongly, talking 45 from the first nine overs without the loss of a wicket. However, Warne dismissed Herschelle Gibbs and Gary Kirsten before long and eventually took 4/29 from 10 overs. The last over started with the Africans needing nine runs with one wicket in hand. Lower-order hitter, Lance Klusener, proceeded to score eight runs in the next two balls. Drama followed, as Donald was run-out two balls later, resulting in a tie. Australia qualified for the final because they finished higher than their opposition on the Super Six table. They comfortably accounted for Pakistan in the final, winning by eight wickets, after they were set a target of 132. 
+				Ponting scored 24 in Australia's first World Cup win since 1987.[102] He ended the tournament with 354 runs at 39.33.</p>
+					
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="ricky.jpg" alt="Ricky">
+        </div>
+        
+     
+    </section>
+</body>
+</html>

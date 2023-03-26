@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+			body {
+			color: #333;
+			background-color:#CACFD2 ;
+			font-family:Agency FB, sans-serif;
+			font-weight: 400;
+			}
+			h1 {
+				font-weight: 1000;
+				margin-bottom:80px;
+				font-size:96px;
+				margin-top:10px;
+				text-align:center;
+			}
+			footer{font-size:40px; margin-top:135px;}
+			
+			
+			
+			
+			.column:last-child {
+				padding-bottom: 60px;
+			}
+			.column::after {
+				content: '';
+				clear: both;
+				display: block;
+			}
+			.column div {
+				position: relative;
+				float: left;
+				width: 330px;
+				height: 200px;
+				margin: 0 0 0 25px;
+				padding: 0;
+			}
+			.column div:first-child {
+				margin-left: 25px;
+			}
+			.column div span {
+				position: absolute;
+				bottom: -20px;
+				left: 0;
+				z-index: -1;
+				width: 300px;
+				margin: 0;
+				padding: 0;
+				color: #444;
+				font-size: 28px;
+				text-decoration: none;
+				text-align: center;
+				font-weight:300;
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
+				opacity: 0;
+			}
+			figure {
+				border: 5px solid red;
+				width: 300px;
+				height: 200px;
+				margin:0;
+				padding: 0;
+				background: #fff;
+				overflow: hidden;
+			}
+			figure:hover+span {
+				bottom: -40px;
+				opacity: 1;
+			}
+			.logo1{display: block;
+			margin-left: 1200px;
+			margin-right: 1200px;
+			width: 12%;}
+			
+			
+	</style>	 
+
+    
+    <title>Student Details</title>
+</head>
+<body>
+<header>
+        <div class="container">
+          <img src="logo.jpeg" alt="logo1" class="logo">
+
+          <nav>
+            <ul>
+               <li><a href="mainpage.html">Home</a></li>
+              <li><a href="studentdetailspage.html">About Us</a></li>
+              <li><a href="store-page.html.html">Store</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+			  <li><a href="Gallery.html">Gallery</a></li>
+			  <li><a href="g.html">Query Form</a></li>
+			  <li><a href="sitemap2.html">Site Map</a></li>
+              <li><a href="ricky.html">Others</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+<img src="logo.jpeg" alt="logo" class="logo">
+<h1>Student Details</h1>
+<div class="column">
+  <div>
+    <figure><img src="theekshana.jpg" alt="Theekshan"/></figure>
+    <span>Theekshana Jayasanka, Student 1</span>
+  </div>
+  <div>
+    <figure><img src="asel.jpg" alt="Asel" /></figure>
+    <span>Asel Hidallearachchi, Student 2</span>
+  </div>
+  <div>
+    <figure><img src="haritha.jpg" alt="Haritha"/></figure>
+   <span>Haritha Ganegoda, Student 3</span>
+  </div>
+   <div>
+   <figure><img src="yasiru.jpg" alt="Yasiru" /></figure>
+   <span>Yasiru Jayamadu, Student 4</span>
+  </div>
+</div>
+<br><br>
+<footer>
+  
+  <p><a href="aboutharitha.html">Page Editor</a></p>
+</footer>
+
+</body>
+</html>

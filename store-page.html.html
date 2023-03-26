@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="navbar.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style-store.css'>
+    <script src='script-store.js'></script>
+</head>
+
+<body>
+	<header>
+        <div class="container">
+          <img src="logo.jpeg" alt="logo" class="logo">
+
+          <nav>
+            <ul>
+              <li><a href="mainpage.html">Home</a></li>
+              <li><a href="studentdetailspage.html">About Us</a></1i>
+              <li><a href="store-page.html.html">Store</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+			  <li><a href="Gallery.html">Gallery</a></li>
+			  <li><a href="g.html">Query Form</a></li>
+			  <li><a href="sitemap2.html">Site Map</a></li>
+              <li><a href="ricky.html">Others</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="header-wrap">
+        <p>Cricket Store</p>
+        <img src="images/logo.jpeg" alt="store-icon">
+    </div>
+
+    <div class="shop-item-wrap">
+        <div class="item-wrap">
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/bat1.webp">
+                </div>
+                <div class="details">
+                    <p class="title">GM Noir 808 Bat</p>
+                    <p class="price">$760.00</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, reiciendis magnam ipsam erro_1"</p><br>
+                    <form onsubmit="return addItem('GM Noir 808 Bat',760,'item_1')">
+                        <input type="number" id="item_1" min="0" value="0">
+                        <input type="submit" value="Add To Cart">
+                    </form>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/ball1.webp">
+                </div>
+                <div class="details">
+                    <p class="title">GN Special Ball</p>
+                    <p class="price">$24.00</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, reiciendis magnam ipsam erro_1"</p><br>
+                    <form onsubmit="return addItem('GN Special Ball',24,'item_2')">
+                        <input type="number" id="item_2" min="0" value="0">
+                        <input type="submit" value="Add To Cart">
+                    </form>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/glouse1.webp">
+                </div>
+                <div class="details">
+                    <p class="title">KK Hard Gloves</p>
+                    <p class="price">$99.00</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, reiciendis magnam ipsam erro_1"</p><br>
+                    <form onsubmit="return addItem('KK Hard Gloves',99,'item_3')">
+                        <input type="number" id="item_3" min="0" value="0">
+                        <input type="submit" value="Add To Cart">
+                    </form>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/helmet1.webp">
+                </div>
+                <div class="details">
+                    <p class="title">Atomic Helmet</p>
+                    <p class="price">$78.00</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, reiciendis magnam ipsam erro_1"</p><br>
+                    <form onsubmit="return addItem('Atomic Helmet',78,'item_4')">
+                        <input type="number" id="item_4" min="0" value="0">
+                        <input type="submit" value="Add To Cart">
+                    </form>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="images/pad1.webp">
+                </div>
+                <div class="details">
+                    <p class="title">GM Batting Pad</p>
+                    <p class="price">$85.00</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, reiciendis magnam ipsam erro_1"</p><br>
+                    <form onsubmit="return addItem('GM Batting Pad',85,'item_5')">
+                        <input type="number" id="item_5" min="0" value="0">
+                        <input type="submit" value="Add To Cart">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="final-details-wrap">
+
+        <p>Order Details</p>
+        <div class="order-wrap">
+            <table id="report_table">
+                <tr>
+                    <th>No</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price of an Item</th>
+                    <th>Total Price</th>
+                </tr>
+            </table>
+            <form onsubmit="return clearAll()">
+                <input class="place-order" type="submit" value="Reset Order">
+            </form>
+        </div>
+
+        <p>Customer Details</p>
+        <div class="user-details-wrap">
+            <form onsubmit="return placeOrder()">
+                <table>
+                    <tr>
+                        <td>Customer Name</td>
+                        <td> : </td>
+                        <td><input type="text" placeholder="John Smith" id="cus_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Email</td>
+                        <td> : </td>
+                        <td><input type="text" placeholder="john@gmail.com" id="cus_email"></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Mobile</td>
+                        <td> : </td>
+                        <td><input type="text" placeholder="07xxxxxxxx" id="cus_mobile"></td>
+                    </tr>
+                </table>
+                <input class="place-order" type="submit" value="Place Order">
+            </form>
+        </div>
+
+        <p>Receipt</p>
+        <div class="receipt-wrap">
+            <p id="receipt_data">
+            </p>
+        </div>
+
+    </div>
+	<footer>
+  
+		<p><a href="aboutTheekshana.html">Page Editor</a></p>
+	</footer>
+</body>
+
+</html>

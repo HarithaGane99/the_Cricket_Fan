@@ -1,0 +1,177 @@
+<!doctype>
+    <html>
+	    <head>
+			<meta charset="UTF-8">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="navbar.css">
+		    <title>Query Form</title>
+			<link rel="stylesheet" href="style.css">
+			
+			<style>
+			*{
+	          margin:0;
+	          padding:0;
+	          font-family: 'Josefin Sans', sans-serif;
+              }
+			 
+			   
+			</style>  
+			
+		</head>
+        <body id="background">
+			<header>
+        <div class="container">
+          <img src="logo.jpeg" alt="logo" class="logo">
+
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="studentdetailspage.html">About Us</a></1i>
+              <li><a href="store-page.html.html">Store</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+			  <li><a href="Gallery.html">Gallery</a></li>
+			  <li><a href="g.html">Query Form</a></li>
+			  <li><a href="sitemap2.html">Site Map</a></li>
+              <li><a href="ricky.html">Others</a></li>
+			  
+            </ul>
+          </nav>
+        </div>
+      </header>
+		
+		
+		<br> <br> <br> <br>  
+            <div 	 id="querytopic" >
+            
+                 <h1 ><b><i>QUERY FORM</i></b></h1>
+				 <h6>We'd love to hear from you! Please send  us your queries.</h6>
+				 <br/>
+				 <section id="part1">
+                 <label for="name" class="margin" >Your Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 <input type="text"	name="Name" id="yname"  place holder="Your Name"><br>
+                 <br/>
+				 <br/>
+				 <label for="occupation"  class="margin">Occupation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+				 <input type="text"  name="occupation" id="occupation" ><br>
+				 <br/>
+				 <br/>
+				 <label for="email"  class="margin" >Email Address:&nbsp;&nbsp;</label>
+				 <input type="email"  name="email" id="email"><br>
+				 <br/>
+				 <br/>
+			
+				 <label for="subject" class="margin" class="margin">Query subject:&nbsp;&nbsp;&nbsp; </label>
+				 <select name="subject" id="subjectoptions" >
+				       <option value="A">Seller</option>
+					   <option value="B" selected>Delivery</option>
+					   <option value="C">Price</option>
+					   <option value="D">Quality</option><br>
+				 </select><br>
+                 <br/>
+                 <br/>				 
+			
+				 <label for="content"  class="margin">Query Details:</label>
+				 <br/>
+				 <textarea  id="txarea" cols="30" rows="7" class="margin"></textarea><br>
+				 </section>
+				    
+	   	        <section id="part2">
+	            <label for="name">Name:</label>
+	            <label id="cname"></label><br><br>
+	            <label for="occupation">Occupation:</label>
+	            <label id="coccupation"></label><br><br>	   
+	            <label for="name">Email:</label>
+	            <label id="cemail"></label><br><br>
+				 
+	            <label for="s-options">Query subject:</label>
+	            <label id="s-options"></label><br><br>
+	            <label for="cdetails">Query Details:</label>
+	            <label id="cdetails"></label><br><br>
+		        </section>
+				 
+				 
+				 <button id="cview"  class="margin"  onclick="validate()" >View Query</button>
+				 <br/>
+				 <br/>
+				 <script type="text/javascript">	
+			 function validate() {
+			   var e = document.getElementById("subjectoptions"); 
+			   var subject = e.options[e.selectedIndex].text;
+			   var username = document.getElementById("yname").value;
+			   var occupation = document.getElementById("occupation").value;
+			   var email = document.getElementById("email").value;
+			   var content = document.getElementById("txarea").value;
+
+                  
+			   if(this.formvalidate(username)){
+				  
+				  alert("Please fill the Name section");
+				  return false;
+                  } 
+                  if(this.formvalidate(occupation)){
+				  
+				  alert("Please fill the Occupation section");
+				  return false;
+                  }
+                  if(this.formvalidate(email)){
+				  
+				  alert("Please fill the Email section");
+				  return false;
+                  }
+                  if(this.formvalidate(content)){
+				  
+				  alert("Please fill the Content section");
+				  return false;
+                  }else{
+				  document.getElementById("cname").innerHTML = username;
+				  document.getElementById("coccupation").innerHTML = occupation;
+				  document.getElementById("cemail").innerHTML = email;
+				  document.getElementById("s-options").innerHTML = subject;
+				  document.getElementById("cdetails").innerHTML = content;
+				  document.getElementById("part1").style.visibility = 'hidden';
+				  document.getElementById("part2").style.visibility = 'visible';
+				  document.getElementById("part2").style.display = 'block';
+				  document.getElementById("part1").style.display = 'none';
+				  document.getElementById("cview").style.visibility = 'hidden';
+				  document.getElementById("editbtn").style.visibility = 'visible';
+					alert("You have filled all the blanks");
+				  }
+            }
+			function edit() {
+			var e = document.getElementById("subjectoptions"); 
+			   var subject = e.options[e.selectedIndex].text;
+			   var username = document.getElementById("yname").value;
+			   var occupation = document.getElementById("occupation").value;
+			   var email = document.getElementById("email").value;
+			   var content = document.getElementById("txarea").value;
+
+			   if(!this.formvalidate(username,occupation,email,content)){
+
+				 document.getElementById("part1").style.visibility = 'visible';
+				 document.getElementById("part2").style.visibility = 'hidden';
+				 document.getElementById("part1").style.display = 'block';
+				 document.getElementById("part2").style.display = 'none';
+				 document.getElementById("cview").style.visibility = 'visible';
+				
+				
+					}
+				}
+			function formvalidate(username,occupation,email,content) {
+					return (username =="" ||occupation =="" ||email =="" ||content =="");
+				
+				
+				}
+	   </script>
+				 <button id="editbtn"  class="margin"   onclick="edit()" >Edit</button> 
+				 
+				 <button id="sendbtn" type="submit" name="button" value="Send" >Send</button>
+				 <div>
+                  <button id="to-PageEditor" ><a href="aboutAsel.html">Page Editor</a></button>
+                 </div>
+			</div>	 
+		</body>
+</html>		
+        				 

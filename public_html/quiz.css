@@ -1,0 +1,27 @@
+
+.question{font-size:22px;font-family: Consolas;text-align:left;color:#0CF20E}
+#box{border-style: solid;border-color:#FFFFFF;border-width:3px;height:250px;width:510px;
+margin:auto;background-color:#2F037E;
+
+}
+body {background-color: #0A0202 ;color:#FCFBFB; font-family: Consolas}
+.color1{background-color:#7E7DD1;border-style: solid;
+  border-color:yellow;border-width:3px;margin-top:10px;}
+.color2{background-color:#A255A1;border-style: solid;
+  border-color:blue;border-width:3px;margin-top:10px;}
+h1{text-align:center;color:red;}
+
+.btn{background-color:green; font-size: 22px;border-style: solid;border-color:#FFFFFF;border-width:3px;margin-left:1200px;font-family: Consolas}
+
+h3{text-align:right;}
+
+.qt{ margin-left: 500px;
+  margin-right: 100px;}
+  
+.ks{ margin-left: 50px;
+ }
+  
+.color1,.color2{margin-left:200px;margin-right:250px;}
+
+	a{color:#fff}
+.logo{margin-left:200px;}

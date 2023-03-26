@@ -1,0 +1,192 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>sitemap
+    </title>
+    <style>
+    
+    
+    
+    .line{
+    stroke:#666262;
+    stroke-width:4
+        ;
+    }
+        
+        .box{
+            fill:#72041c;
+        stroke:transparent;
+        stroke-width:3;
+        fill: opacity 0.5;
+        stroke-opacity:0.8;
+            
+        }
+        footer{font-size:30px; margin-top:135px;}
+       
+        
+
+        }
+        
+        .name{
+            font-size:50px;
+            font-family: Agency FB;
+            
+        }
+         #body{
+            display: flex
+            
+            
+            
+        }
+
+     </style>
+    
+    
+    
+    
+    
+    </head>
+
+<body id="body">
+	<header>
+        <div class="container">
+          <img src="logo.jpeg" alt="logo" class="logo">
+
+          <nav>
+            <ul>
+              <li><a href="mainpage.html">Home</a></li>
+              <li><a href="studentdetailspage.html">About Us</a></1i>
+              <li><a href="store-page.html.html">Store</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+			  <li><a href="Gallery.html">Gallery</a></li>
+			  <li><a href="g.html">Query Form</a></li>
+			  <li><a href="sitemap2.html">Site Map</a></li>
+              <li><a href="ricky.html">Others</a></li>
+			  
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+<div>
+    
+    <svg width="1550px"  height="1600px" >
+  
+  
+  <line x1="270px" y1="390px" x2="350px" y2="390px"  class="line"/>
+  <line x1="310px" y1="390px" x2="310px" y2="700px" class="line" />
+  <line x1="1020px" y1="390px" x2="1020px" y2="700px" class="line" />
+  <line x1="980" y1="390" x2="1070px" y2="390px"  class="line"/>
+  <line x1="310px" y1="550px" x2="1020px" y2="550px"  class="line"/>
+ 
+        
+        
+        <a href="#">
+        <rect x="20" y="300" width="250" height="250"  ry="60"  class="box"  />
+        <text x="115" y="330" class="name">HOME</text>     
+        <polygon points="140,340 210,390 70,390"/>
+        <rect  x="100" y="390" height="90" width="80"/>     
+        </a>
+        
+        
+       <a href="store-page.html.html">
+        
+        <rect x="350" y="250" width="250" height="250" ry="60" 
+              class="box"/>
+        <text x="440" y="280" class="name">STORE</text>
+        <circle cx="450" cy="420" r="20" />
+        <circle cx="510" cy="420" r="20" />
+        <rect x="420" y="350" height="40" width="120"/>
+        <rect x="420" y="320" height="30" width="10"/>
+        <rect x="410" y="320" height="10" width="10"/>
+        </a>
+    
+        
+         <a href="Gallery.html">
+        <rect x="730" y="250" width="250" height="250" ry="60"               
+              class="box"/>
+        <text x="800" y="280" class="name">GALLERY</text> 
+        <rect x="845" y="320" height="30" width="30"/>
+        <rect x="810" y="320" height="30" width="30"/>
+        <rect x="845" y="355" height="30" width="30"/>
+        <rect x="880" y="355" height="30" width="30"/>
+        <rect x="810" y="355" height="30" width="30"/>
+        
+
+
+
+        </a>
+        
+        
+
+        
+        <a href="quiz.html">
+        
+        <rect x="1070" y="300"  width="250" height="250" ry="60"              
+              class="box"/>
+        <text x="1170" y="330" class="name">QUIZ</text> 
+        
+        <rect x="1120" y="375" height="15" width="150"/>
+        <rect x="1120" y="400" height="15" width="90"/>
+        <rect x="1120" y="420" height="15" width="110"/>
+        <rect x="1120" y="440" height="15" width="70"/>
+        <rect x="1120" y="460" height="15" width="90"/>
+
+
+
+            
+        </a>
+        
+        
+        
+        <a href="studentdetailspage.html">
+        
+        <rect x="190" y="700" width="250" height="250" ry="60"               
+              class="box"/>
+
+        <text x="280" y="750" class="name">ABOUT US</text>
+        <rect  x="220" y="790" height="50" width="40"/>     
+        <rect  x="270" y="790" height="50" width="40"/>
+        <rect  x="320" y="790" height="50" width="40"/>  
+        <rect  x="370" y="790" height="50" width="40"/>  
+        <rect  x="240" y="850" height="10" width="140"/> 
+        <rect  x="240" y="865" height="10" width="140"/>     
+        </a>
+        
+        
+        
+        
+        
+        
+        <a href="g.html">
+        
+        <rect x="900" y="700" width="250" height="250" ry="60"              
+              class="box"/>
+
+        <text x="970" y="750" class="name">Query</text>       
+       
+        <rect  x="980" y="790" height="50" width="80"/>  
+        <rect  x="970" y="865" height="10" width="80"/>  
+         
+
+        </a>
+        
+        
+ </svg>
+ <footer>
+	<p><a href="About Yasiru.html">Page Editor</a></p>
+</footer>
+</div> 
+
+</body>
+
+   
+
+
+</html>
